@@ -42,8 +42,9 @@ def load_indexes():
     random.shuffle(indexes)
     return indexes 
 
-output_path = input("Please enter your image file path:")
-file_path = "images/input_image2.jpg"
+file_path = input("Please enter your input image file path:")
+output_path = input("Please enter your output image file path:")
+
 Blue, Green, Red = load_image(file_path)
 indexes = load_indexes()
 tree = octree.Octree()
